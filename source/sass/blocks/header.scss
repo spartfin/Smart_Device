@@ -1,0 +1,322 @@
+.header {
+  max-width: 1920px;
+  min-height: 882px;
+  margin: 0 auto;
+  background-image: url("../img/boards.png"), url("../img/fon-triangle.png"), url("../img/fon-header.png");
+  background-repeat: no-repeat;
+  background-position-x: 1040px, 0, 0;
+  background-position-y: 260px, 0, 0;
+
+  @media (max-width: $tablet-width) {
+    min-height: 693px;
+    background-size: 465px 340px, 1515px 673px, 1515px 873px;
+    background-position-x: 510px, -373px, -390px;
+    background-position-y: 112px, -123px, -125px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 647px;
+    background-size: 301px 220px, 1447px 715px, 1447px 715px;
+    background-position-x: center, -624px, -390px;
+    background-position-y: 92px, -155px, 0;
+  }
+}
+
+.header__page {
+  max-width: 1411px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: 750px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 320px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  max-width: 1411px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 33px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 16px;
+  }
+}
+
+.logo {
+  display: flex;
+  width: 205px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 38px;
+    height: 38px;
+    margin-left: 17px;
+  }
+}
+
+.logo__title {
+  font-family: $textRoboto;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #ffffff;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.logo__slogan {
+  font-family: $textRoboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.logo__wrapper {
+  padding-left: 16px;
+  margin-top: 5px;
+}
+
+.header__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    height: 52px;
+  }
+}
+
+.header__contact_mail,
+.header__contact_phone {
+  position: relative;
+  line-height: 18px;
+  color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    font-size: 0;
+    padding-bottom: 15px;
+  }
+}
+
+.header__contact_mail {
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/envelope.svg");
+    top: 2px;
+    left: -40px;
+    width: 19px;
+    height: 14px;
+
+    @media (max-width: $tablet-width) {
+      width: 26px;
+      height: 19px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 35px;
+      top: 3px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: -1px;
+    }
+  }
+}
+
+.header__contact_phone {
+  margin-left: 124px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/phone-call.svg");
+    left: -36px;
+    width: 18px;
+    height: 18px;
+
+    @media (max-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: -30px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: -4px;
+      left: -38px;
+    }
+  }
+}
+
+.header__contact_button {
+  width: 180px;
+  height: 45px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-family: $textRoboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 50px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__title {
+  position: relative;
+  width: 750px;
+  font-family: $textRoboto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 229px;
+  z-index: 1;
+
+  @media (max-width: $tablet-width) {
+    width: 518px;
+    padding-top: 113px;
+    margin-left: 88px;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 285px;
+    padding-top: 217px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+.header__services {
+  position: relative;
+  width: 767px;
+  margin-top: 29px;
+  padding-left: 91px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/line.png");
+    top: 17px;
+    left: 0;
+    width: 66px;
+    height: 2px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 32px;
+    width: 390px;
+    margin-left: 88px;
+    padding-left: 53px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      top: 14px;
+      width: 33px;
+      left: 4px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 265px;
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 38px;
+    font-size: 16px;
+    line-height: 25px;
+
+    &::before {
+      left: -10px;
+    }
+  }
+}
+
+.header__consultation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 407px;
+  height: 55px;
+  margin-top: 43px;
+  margin-left: 94px;
+  background: #00b2ff;
+  border-radius: 5px;
+  font-family: $textRoboto;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 379px;
+    margin-left: 139px;
+    margin-top: 54px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 287px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+
+    span {
+      position: relative;
+      visibility: hidden;
+
+      &::after {
+        position: absolute;
+        visibility: visible;
+        content: "Бесплатная консультация";
+        top: 9px;
+        left: 35px;
+      }
+    }
+  }
+}
