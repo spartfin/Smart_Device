@@ -31,7 +31,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 320px;
+    width: auto;
   }
 }
 
@@ -214,9 +214,11 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 285px;
+    display: flex;
+    justify-content: center;
+    width: auto;
     padding-top: 217px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     font-size: 40px;
     line-height: 47px;
@@ -258,16 +260,19 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 265px;
+    display: flex;
+    justify-content: center;
+    width: auto;
     margin-top: 29px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     padding-left: 38px;
     font-size: 16px;
     line-height: 25px;
 
     &::before {
-      left: -10px;
+      left: 2px;
+      top: 12px;
     }
   }
 }
@@ -300,23 +305,43 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 287px;
+    position: relative;
+    width: auto;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 16px;
+  }
 
-    span {
-      position: relative;
-      visibility: hidden;
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
 
-      &::after {
-        position: absolute;
-        visibility: visible;
-        content: "Бесплатная консультация";
-        top: 9px;
-        left: 35px;
-      }
+.header__consultation_free {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 55px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #00b2ff;
+    border-radius: 5px;
+    font-family: $textRoboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &:hover {
+      opacity: 0.5;
     }
   }
 }

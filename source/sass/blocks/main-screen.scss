@@ -1,0 +1,199 @@
+.advantages {
+  background-color: #fafafa;
+}
+
+.advantages__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1170px;
+  padding-top: 109px;
+
+  @media (max-width: $tablet-width) {
+    width: 720px;
+    padding-top: 54px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    justify-content: center;
+    min-width: 320px;
+    width: auto;
+    padding-top: 37px;
+  }
+}
+
+.advantages__title {
+  padding-top: 98px;
+  font-family: $textRoboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00b2ff;
+  padding-left: 44px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 70px;
+    padding-left: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 28px;
+    padding-right: 0;
+  }
+}
+
+.advantages__list_item {
+  position: relative;
+  max-width: 570px;
+  min-height: 299px;
+  border: 1px solid rgba(160, 160, 160, 0.2);
+  border-left: 2px solid #00b2ff;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 345px;
+    min-height: 232px;
+    padding-bottom: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    max-width: 767px;
+    min-width: 250px;
+    min-height: 232px;
+    margin-right: 19px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(1) {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/stopwatch.svg");
+      width: 30px;
+      height: 36px;
+      top: 40px;
+      left: 44px;
+
+      @media (max-width: $tablet-width) {
+        top: 30px;
+        left: 25px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/hired.svg");
+      width: 36px;
+      height: 36px;
+      top: 40px;
+      left: 44px;
+
+      @media (max-width: $tablet-width) {
+        width: 32px;
+        height: 33px;
+        background-size: cover;
+        top: 30px;
+        left: 25px;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/detective.svg");
+      width: 36px;
+      height: 32px;
+      top: 40px;
+      left: 44px;
+
+      @media (max-width: $tablet-width) {
+        width: 31px;
+        height: 26px;
+        background-size: cover;
+        top: 30px;
+        left: 25px;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/tag.svg");
+      width: 35px;
+      height: 35px;
+      top: 40px;
+      left: 44px;
+
+      @media (max-width: $tablet-width) {
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+        top: 30px;
+        left: 25px;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: #00b2ff;
+    color: white;
+
+    .advantages__title {
+      color: white;
+    }
+
+    &:nth-child(1) {
+      &::before {
+        background-image: url("../img/stopwatch-white.svg");
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url("../img/hired-white.svg");
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        background-image: url("../img/detective-white.svg");
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        background-image: url("../img/tag-white.svg");
+      }
+    }
+  }
+}
+
+.advantages__list_item p {
+  padding-top: 15px;
+  padding-left: 44px;
+  padding-right: 42px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 14px;
+    padding-left: 25px;
+    padding-right: 23px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 9px;
+    padding-right: 0;
+  }
+}
