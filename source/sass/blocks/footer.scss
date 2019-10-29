@@ -1,0 +1,353 @@
+.footer {
+  background-color: #fafafa;
+}
+
+.footer__wrapper {
+  display: flex;
+  max-width: 1411px;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 36px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 320px;
+    border: none;
+  }
+}
+
+.footer__logo {
+  height: 52px;
+  margin-bottom: 53px;
+  width: 250px;
+  letter-spacing: 0.05em;
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 0;
+
+    &::after {
+      position: absolute;
+      content: "1999-2018 SD Service Devices";
+      width: 245px;
+      top: 16px;
+      left: 305px;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #1b2d37;
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 77px;
+    margin-left: 30px;
+
+    &::after {
+      top: 78px;
+      left: -7px;
+    }
+  }
+}
+
+.footer__logo .logo__title {
+  color: #203c42;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+  }
+}
+
+.footer__logo .logo__slogan {
+  color: #788891;
+  letter-spacing: 0.01em;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+  }
+}
+
+.footer__wrapper_logo-social {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1023px;
+    padding-top: 19px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    border: none;
+    padding-top: 46px;
+    padding-bottom: 45px;
+  }
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 6px;
+  }
+}
+
+.social__item {
+  padding-right: 16px;
+
+  &:nth-child(3) {
+    @media (max-width: $tablet-width) {
+      padding-right: 0;
+    }
+  }
+}
+
+.social__link,
+.navigation__wrapper a,
+.footer__info a {
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.navigation__title,
+.contacts__title {
+  font-family: $textRoboto;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2d37;
+  padding-bottom: 24px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 320px;
+  }
+}
+
+.navigation__title {
+  @media (max-width: $mobile-width) {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/Union.svg");
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 272px;
+    }
+  }
+}
+
+.navigation__list {
+  list-style: none;
+  padding-right: 65px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 0;
+  }
+}
+
+.navigation__list__cont {
+  list-style: none;
+}
+
+.navigation__wrapper {
+  display: flex;
+  max-width: 516px;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    max-width: 250px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.footer__navigation,
+.footer__contacts {
+  margin-left: auto;
+}
+
+.footer__navigation {
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    padding-top: 38px;
+    padding-left: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    padding-top: 29px;
+    width: 320px;
+    margin: 0 auto;
+    padding-left: 15px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10000px;
+      height: 1px;
+      background-color: rgba(98, 105, 98, 0.2);
+      top: 0;
+      left: -5000px;
+    }
+  }
+}
+
+.contacts__title {
+  @media (max-width: $mobile-width) {
+    position: relative;
+    padding-bottom: 32px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/Union-min.svg");
+      width: 16px;
+      height: 2px;
+      top: 0;
+      left: 272px;
+    }
+  }
+}
+
+.footer__contacts {
+  @media (max-width: $tablet-width) {
+    margin-left: auto;
+    padding-top: 38px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    max-width: 320px;
+    margin-left: 15px;
+    padding-top: 33px;
+    padding-left: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10000px;
+      height: 1px;
+      background-color: rgba(98, 105, 98, 0.2);
+      top: 4px;
+      left: -5000px;
+    }
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.contacts__wrapper p {
+  @media (max-width: $mobile-width) {
+    width: 250px;
+  }
+}
+
+.footer__info {
+  display: flex;
+  max-width: 1411px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1b2d37;
+  opacity: 0.5;
+  padding: 14px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 21px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    flex-direction: column;
+    padding: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10000px;
+      height: 1px;
+      background-color: rgba(98, 105, 98, 0.2);
+      top: -10px;
+      left: -5000px;
+    }
+  }
+}
+
+.footer__info_confid {
+  @media (max-width: $tablet-width) {
+    padding-left: 26px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    padding-top: 19px;
+    margin: 0 auto;
+  }
+}
+
+.footer__info_protection {
+  margin-right: 59px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.footer__info_year {
+  margin-right: 142px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.footer__info_studio {
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 21px;
+    padding-bottom: 26px;
+  }
+}
