@@ -1,0 +1,57 @@
+.company {
+  background-color: #fafafa;
+}
+
+.company__wrapper {
+  max-width: 985px;
+  padding-top: 109px;
+  padding-bottom: 100px;
+  padding-left: 90px;
+  margin: 0 auto;
+}
+
+.company__title {
+  position: relative;
+  font-family: $textRoboto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  padding-bottom: 18px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 317px;
+    background-image: url("../img/year2005.png");
+    top: 0;
+    left: -180px;
+  }
+}
+
+.company__description {
+  padding-bottom: 20px;
+}
+
+.company__more-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 45px;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+  font-family: $textRoboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+  margin-top: 22px;
+
+  &:hover {
+    color: #fafafa;
+    background-color: #00b2ff;
+  }
+}

@@ -1,19 +1,25 @@
 .advantages {
   background-color: #fafafa;
+  padding-top: 109px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 37px;
+  }
 }
 
 .advantages__list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  width: 1170px;
-  padding-top: 109px;
+  max-width: 1170px;
 
   @media (max-width: $tablet-width) {
     width: 720px;
-    padding-top: 54px;
   }
 
   @media (max-width: $mobile-width) {
@@ -21,7 +27,6 @@
     justify-content: center;
     min-width: 320px;
     width: auto;
-    padding-top: 37px;
   }
 }
 
@@ -49,6 +54,7 @@
 .advantages__list_item {
   position: relative;
   max-width: 570px;
+  width: 100%;
   min-height: 299px;
   border: 1px solid rgba(160, 160, 160, 0.2);
   border-left: 2px solid #00b2ff;
