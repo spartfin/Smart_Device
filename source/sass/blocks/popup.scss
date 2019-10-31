@@ -1,0 +1,121 @@
+.popup {
+  position: fixed;
+  max-width: 490px;
+  width: auto;
+  height: 605px;
+  top: 50%;
+  margin-top: -302px;
+  left: 50%;
+  margin-left: -245px;
+  background-color: #00b2ff;
+  z-index: 15;
+  padding: 33px 40px;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/Union-popup.svg");
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.popup__title {
+  font-family: $textRoboto;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  padding-bottom: 10px;
+}
+
+.popup_description {
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+.popup__form input,
+.popup__form textarea {
+  background-color: #33c1ff;
+  border: none;
+  width: 100%;
+  color: #ffffff;
+  padding-left: 24px;
+}
+
+.popup__form textarea {
+  height: 104px;
+  padding-top: 18px;
+}
+
+.popup__form input {
+  height: 50px;
+}
+
+.popup__form_item {
+  margin-bottom: 30px;
+}
+
+.popup__form_item ::placeholder {
+  color: #ffffff;
+}
+
+.popup__button {
+  width: 100%;
+  height: 47px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-family: $textRoboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.popup__form_checkbox {
+  position: relative;
+  cursor: pointer;
+  font-family: $textMono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    top: 0;
+    left: -45px;
+  }
+}
+
+.popup__form_checkbox input[type="checkbox"]:checked + .popup__form_checkbox-indicator {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/Vector.svg");
+    width: 5px;
+    height: 9px;
+    top: 3px;
+    left: -40px;
+    transform: rotate(90deg);
+  }
+}
+
+.popup__form_data-processing {
+  padding-left: 45px;
+  padding-right: 20px;
+}
