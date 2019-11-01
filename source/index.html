@@ -7,9 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Смарт Девайс</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
 </head>
 
 <body>
@@ -216,12 +213,14 @@
     </div>
   </footer>
 
+  <section class="overlay"></section>
+
   <section class="popup">
     <h3 class="popup__title">Закажите звонок</h3>
     <p class="popup_description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="popup__form" action="#" method="post">
       <p class="popup__form_item">
-        <input type="text" name="name" placeholder="Имя" required>
+        <input type="text" name="login" placeholder="Имя" required>
       </p>
       <p class="popup__form_item">
         <input type="tel" name="phone" placeholder="Телефон" required>
@@ -237,7 +236,10 @@
         </label>
       </p>
     </form>
+    <button class="popup__close" type="button">Закрыть</button>
   </section>
+
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

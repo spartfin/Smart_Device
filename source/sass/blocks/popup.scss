@@ -1,4 +1,5 @@
 .popup {
+  display: none;
   position: fixed;
   max-width: 490px;
   width: auto;
@@ -11,16 +12,22 @@
   z-index: 15;
   padding: 33px 40px;
   color: #ffffff;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 17px;
-    height: 17px;
-    background-image: url("../img/Union-popup.svg");
-    top: 20px;
-    right: 20px;
-  }
+.hidden {
+  display: block;
+}
+
+.popup__close {
+  font-size: 0;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border: 0;
+  background-image: url("../img/Union-popup.svg");
+  right: 20px;
+  top: 20px;
 }
 
 .popup__title {
