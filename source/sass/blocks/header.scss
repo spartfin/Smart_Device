@@ -2,35 +2,38 @@
   max-width: 1920px;
   min-height: 882px;
   margin: 0 auto;
-  background-image: url("../img/boards.png"), url("../img/fon-triangle.png"), url("../img/fon-header.png");
+  background-image: url("../img/boards.png"), url("../img/fon-triangle.png");
   background-repeat: no-repeat;
-  background-position-x: 1040px, 0, 0;
-  background-position-y: 260px, 0, 0;
+  background-position-x: 1040px, 0;
+  background-position-y: 260px, 0;
 
   @media (max-width: $tablet-width) {
     min-height: 693px;
-    background-size: 465px 340px, 1515px 673px, 1515px 873px;
-    background-position-x: 510px, -373px, -390px;
-    background-position-y: 112px, -123px, -125px;
+    background-size: 465px 340px, 1515px 673px;
+    background-position-x: 510px, -373px;
+    background-position-y: 112px, -123px;
   }
 
   @media (max-width: $mobile-width) {
     min-height: 647px;
-    background-size: 301px 220px, 1447px 715px, 1447px 715px;
-    background-position-x: center, -624px, -390px;
-    background-position-y: 92px, -155px, 0;
+    background-size: 301px 220px, 1447px 715px;
+    background-position-x: center, -624px;
+    background-position-y: 92px, -155px;
   }
 }
 
 .header__page {
   max-width: 1411px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (max-width: $tablet-width) {
+    padding: 0;
     max-width: 750px;
   }
 
   @media (max-width: $mobile-width) {
+    padding: 0;
     width: auto;
   }
 }
@@ -110,6 +113,10 @@
   position: relative;
   line-height: 18px;
   color: #ffffff;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet-width) {
     font-size: 0;
@@ -203,6 +210,17 @@
   color: #ffffff;
   padding-top: 229px;
   z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 93px;
+    background-image: url("../img/scroll-down.png");
+    bottom: -400px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
 
   @media (max-width: $tablet-width) {
     width: 518px;

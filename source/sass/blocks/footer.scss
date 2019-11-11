@@ -9,19 +9,22 @@
   padding-top: 65px;
   padding-bottom: 55px;
   border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
-    padding: 0;
     padding-bottom: 36px;
   }
 
   @media (max-width: $mobile-width) {
+    padding: 0;
     width: auto;
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;
     border: none;
+    padding-bottom: 10px;
   }
 }
 
@@ -34,6 +37,7 @@
   @media (max-width: $tablet-width) {
     position: relative;
     margin-bottom: 0;
+    margin-left: 0;
 
     &::after {
       position: absolute;
@@ -47,6 +51,7 @@
       text-transform: uppercase;
       color: #1b2d37;
       opacity: 0.5;
+      cursor: auto;
     }
   }
 
@@ -148,6 +153,7 @@
     position: relative;
     max-width: 320px;
     margin: 0 auto;
+    cursor: pointer;
 
     &::after {
       position: absolute;
@@ -155,6 +161,25 @@
       background-image: url("../img/Union.svg");
       width: 16px;
       height: 16px;
+      top: 0;
+      left: 272px;
+    }
+  }
+}
+
+.navigation__title_open {
+  @media (max-width: $mobile-width) {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/Union-min.svg");
+      width: 16px;
+      height: 2px;
       top: 0;
       left: 272px;
     }
@@ -172,6 +197,7 @@
 
 .navigation__list__cont {
   list-style: none;
+  padding-right: 10px;
 }
 
 .navigation__wrapper {
@@ -187,7 +213,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    display: none;
+    margin: 0 auto;
+    min-width: 320px;
+    padding-bottom: 20px;
   }
 }
 
@@ -200,14 +228,13 @@
   @media (max-width: $tablet-width) {
     margin-left: 0;
     padding-top: 38px;
-    padding-left: 27px;
+    padding-left: 0;
   }
 
   @media (max-width: $mobile-width) {
     position: relative;
     padding-top: 29px;
-    width: 320px;
-    margin: 0 auto;
+    width: auto;
     padding-left: 15px;
   }
 }
@@ -216,7 +243,31 @@
   @media (max-width: $mobile-width) {
     position: relative;
     padding-bottom: 32px;
-    padding-right: 200px;
+    width: auto;
+    min-width: 320px;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/Union.svg");
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 272px;
+    }
+  }
+}
+
+.contacts__title_open {
+  @media (max-width: $mobile-width) {
+    position: relative;
+    padding-bottom: 32px;
+    width: auto;
+    min-width: 320px;
+    margin: 0 auto;
+    cursor: pointer;
 
     &::after {
       position: absolute;
@@ -238,12 +289,14 @@
   }
 
   @media (max-width: $mobile-width) {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
     margin-left: 0;
     padding-top: 33px;
+    padding-left: 15px;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
   }
 }
@@ -255,11 +308,25 @@
   line-height: 25px;
   opacity: 0.5;
   padding-right: 35px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    min-width: 320px;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-right: 35px;
+  }
 }
 
 .contacts__wrapper p {
   @media (max-width: $mobile-width) {
-    width: 250px;
+    min-width: 250px;
+  }
+}
+
+.contacts__wrapper a {
+  &:hover {
+    opacity: 0.5;
   }
 }
 
@@ -274,7 +341,8 @@
   text-transform: uppercase;
   color: #1b2d37;
   opacity: 0.5;
-  padding: 14px 0;
+  padding: 14px 15px;
+
 
   @media (max-width: $tablet-width) {
     padding: 21px 0;
@@ -337,5 +405,11 @@
     margin: 0 auto;
     padding-top: 21px;
     padding-bottom: 26px;
+  }
+}
+
+.footer__hidden {
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
