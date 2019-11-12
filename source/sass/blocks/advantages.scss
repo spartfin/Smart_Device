@@ -1,10 +1,18 @@
 .advantages {
   background-color: #fafafa;
+  background-image: url("../img/middle-triangle.png"),
+    url("../img/small-triangle.png");
+  background-repeat: no-repeat;
+  background-position-x: 250px, 1550px;
+  background-position-y: 0, 400px;
   padding-top: 109px;
   padding-right: 15px;
   padding-left: 15px;
 
   @media (max-width: $tablet-width) {
+    background-image: none;
+    padding-right: 25px;
+    padding-left: 25px;
     padding-top: 54px;
   }
 
@@ -16,6 +24,7 @@
 }
 
 .advantages__list {
+  position: relative;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -23,7 +32,7 @@
   max-width: 1170px;
 
   @media (max-width: $tablet-width) {
-    min-width: 720px;
+    min-width: 710px;
   }
 
   @media (max-width: $mobile-width) {
@@ -35,7 +44,7 @@
 }
 
 .advantages__title {
-  padding-top: 98px;
+  padding-top: 94px;
   font-family: $textRoboto;
   font-weight: 400;
   font-size: 24px;
@@ -45,118 +54,45 @@
   cursor: default;
 
   @media (max-width: $tablet-width) {
-    padding-top: 70px;
+    padding-top: 65px;
     padding-left: 25px;
+    letter-spacing: 0.015em;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 20px;
     line-height: 28px;
     padding-right: 0;
+    padding-top: 71px;
   }
 }
 
 .advantages__list_item {
   position: relative;
   max-width: 570px;
+  min-width: 345px;
   width: 100%;
   min-height: 299px;
   border: 1px solid rgba(160, 160, 160, 0.2);
   border-left: 2px solid #00b2ff;
   margin-bottom: 30px;
+  background-color: #fafafa;
+  z-index: 20;
 
   @media (max-width: $tablet-width) {
+    min-width: 344px;
     width: auto;
     min-height: 232px;
-    padding-bottom: 12px;
   }
 
   @media (max-width: $mobile-width) {
     width: auto;
     max-width: 767px;
-    min-width: 250px;
+    min-width: 290px;
     min-height: 232px;
     margin-right: 19px;
-    margin-left: 10px;
+    margin-left: 13px;
     margin-bottom: 20px;
-  }
-
-  &:nth-child(1) {
-    margin-right: 20px;
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/stopwatch.svg");
-      width: 30px;
-      height: 36px;
-      top: 40px;
-      left: 44px;
-
-      @media (max-width: $tablet-width) {
-        top: 30px;
-        left: 25px;
-      }
-    }
-  }
-
-  &:nth-child(2) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/hired.svg");
-      width: 36px;
-      height: 36px;
-      top: 40px;
-      left: 44px;
-
-      @media (max-width: $tablet-width) {
-        width: 32px;
-        height: 33px;
-        background-size: cover;
-        top: 30px;
-        left: 25px;
-      }
-    }
-  }
-
-  &:nth-child(3) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/detective.svg");
-      width: 36px;
-      height: 32px;
-      top: 40px;
-      left: 44px;
-
-      @media (max-width: $tablet-width) {
-        width: 31px;
-        height: 26px;
-        background-size: cover;
-        top: 30px;
-        left: 25px;
-      }
-    }
-  }
-
-  &:nth-child(4) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/tag.svg");
-      width: 35px;
-      height: 35px;
-      top: 40px;
-      left: 44px;
-
-      @media (max-width: $tablet-width) {
-        width: 32px;
-        height: 32px;
-        background-size: cover;
-        top: 30px;
-        left: 25px;
-      }
-    }
   }
 
   &:hover {
@@ -165,30 +101,6 @@
 
     .advantages__title {
       color: white;
-    }
-
-    &:nth-child(1) {
-      &::before {
-        background-image: url("../img/stopwatch-white.svg");
-      }
-    }
-
-    &:nth-child(2) {
-      &::before {
-        background-image: url("../img/hired-white.svg");
-      }
-    }
-
-    &:nth-child(3) {
-      &::before {
-        background-image: url("../img/detective-white.svg");
-      }
-    }
-
-    &:nth-child(4) {
-      &::before {
-        background-image: url("../img/tag-white.svg");
-      }
     }
   }
 }
@@ -200,13 +112,289 @@
   cursor: default;
 
   @media (max-width: $tablet-width) {
-    padding-top: 14px;
+    padding-top: 9px;
     padding-left: 25px;
-    padding-right: 23px;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.advantages__list_item .advantages__description_deadlines {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 700px;
+    height: 700px;
+    background-image: url("../img/in-triangle.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 55px;
+    left: 280px;
+
+    @media (max-width: $tablet-width) {
+      background-image: none;
+      width: 0;
+      height: 0;
+    }
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 9px;
-    padding-right: 0;
+    padding-bottom: 42px;
+    padding-left: 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-bottom: 23px;
+    padding-left: 25px;
+  }
+}
+
+.advantages__list_item .advantages__description_suppliers {
+  @media (max-width: $mobile-width) {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-right: 9px;
+  }
+}
+
+.advantages__list_item .advantages__description_coint {
+  @media (max-width: $mobile-width) {
+    padding-bottom: 25px;
+    padding-right: 15px;
+  }
+}
+
+.advantages__title_confidentiality {
+  @media (max-width: $mobile-width) {
+    padding-right: 20px;
+    padding-left: 27px;
+    padding-top: 61px;
+    padding-bottom: 0;
+  }
+}
+
+.advantages__title_coint {
+  @media (max-width: $mobile-width) {
+    padding-top: 64px;
+    padding-left: 27px;
+    padding-bottom: 4px;
+  }
+}
+
+.advantages__list_item .advantages__description_confidentiality {
+  @media (max-width: $tablet-width) {
+    padding-top: 14px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+  }
+}
+
+.advantages__list_item-deadlines {
+  position: relative;
+  margin-right: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-right: 26px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    width: auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/stopwatch.svg");
+    width: 30px;
+    height: 36px;
+    top: 39px;
+    left: 42px;
+
+    @media (max-width: $tablet-width) {
+      top: 24px;
+      left: 25px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/stopwatch-white.svg");
+      width: 30px;
+      height: 36px;
+      top: 39px;
+      left: 42px;
+
+      @media (max-width: $tablet-width) {
+        top: 24px;
+        left: 25px;
+      }
+    }
+  }
+}
+
+.advantages__list_item-suppliers {
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 30px;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    width: auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/hired.svg");
+    width: 36px;
+    height: 36px;
+    top: 39px;
+    left: 42px;
+
+    @media (max-width: $tablet-width) {
+      width: 32px;
+      height: 33px;
+      background-size: cover;
+      top: 24px;
+      left: 25px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/hired-white.svg");
+      width: 36px;
+      height: 36px;
+      top: 39px;
+      left: 42px;
+
+      @media (max-width: $tablet-width) {
+        width: 32px;
+        height: 33px;
+        background-size: cover;
+        top: 24px;
+        left: 25px;
+      }
+    }
+  }
+}
+
+.advantages__list_item-confidentiality {
+  position: relative;
+  margin-right: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 26px;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    width: auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/detective.svg");
+    width: 36px;
+    height: 32px;
+    top: 39px;
+    left: 42px;
+
+    @media (max-width: $tablet-width) {
+      width: 31px;
+      height: 26px;
+      background-size: cover;
+      top: 24px;
+      left: 25px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/detective-white.svg");
+      width: 36px;
+      height: 32px;
+      top: 39px;
+      left: 42px;
+
+      @media (max-width: $tablet-width) {
+        width: 31px;
+        height: 26px;
+        background-size: cover;
+        top: 24px;
+        left: 25px;
+      }
+    }
+  }
+}
+
+.advantages__list_item-coint {
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    width: auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/tag.svg");
+    width: 35px;
+    height: 35px;
+    top: 39px;
+    left: 42px;
+
+    @media (max-width: $tablet-width) {
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+      top: 24px;
+      left: 25px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/tag-white.svg");
+      width: 35px;
+      height: 35px;
+      top: 39px;
+      left: 42px;
+
+      @media (max-width: $tablet-width) {
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+        top: 24px;
+        left: 25px;
+      }
+    }
   }
 }

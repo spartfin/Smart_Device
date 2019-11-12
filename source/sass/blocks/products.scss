@@ -16,7 +16,7 @@
   line-height: 51px;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-top: 93px;
+  padding-top: 87px;
   padding-bottom: 52px;
 
   @media (max-width: $tablet-width) {
@@ -26,7 +26,7 @@
     font-size: 32px;
     line-height: 45px;
     padding-left: 23px;
-    padding-right: 80px;
+    padding-right: 110px;
   }
 
   @media (max-width: $mobile-width) {
@@ -34,7 +34,7 @@
     line-height: 39px;
     padding-left: 25px;
     padding-right: 0;
-    padding-top: 53px;
+    padding-top: 50px;
     padding-bottom: 42px;
   }
 }
@@ -60,7 +60,7 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 44px;
-    padding-top: 42px;
+    padding-top: 40px;
   }
 
   @media (max-width: $mobile-width) {
@@ -69,8 +69,14 @@
     padding-top: 20px;
     letter-spacing: 0.02em;
   }
+}
 
-  &:nth-child(3) {
+.products__description_for-light {
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
     padding-top: 30px;
   }
 }

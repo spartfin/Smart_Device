@@ -4,10 +4,10 @@
 
 .footer__wrapper {
   display: flex;
-  max-width: 1411px;
+  max-width: 1451px;
   margin: 0 auto;
   padding-top: 65px;
-  padding-bottom: 55px;
+  padding-bottom: 59px;
   border-bottom: 1px solid rgba(160, 160, 160, 0.2);
   padding-left: 15px;
   padding-right: 15px;
@@ -15,6 +15,7 @@
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
     padding-bottom: 36px;
+    padding-top: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -24,7 +25,7 @@
     justify-content: center;
     flex-wrap: nowrap;
     border: none;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 }
 
@@ -38,15 +39,17 @@
     position: relative;
     margin-bottom: 0;
     margin-left: 0;
+    padding-left: 10px;
 
     &::after {
       position: absolute;
       content: "1999-2018 SD Service Devices";
       width: 245px;
       top: 16px;
-      left: 305px;
+      left: 312px;
       font-size: 13px;
       line-height: 24px;
+      font-weight: normal;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #1b2d37;
@@ -57,11 +60,11 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 77px;
-    margin-left: 30px;
+    margin-left: 23px;
 
     &::after {
       top: 78px;
-      left: -7px;
+      left: 1px;
     }
   }
 }
@@ -80,6 +83,7 @@
 
   @media (max-width: $mobile-width) {
     display: flex;
+    padding-top: 3px;
   }
 }
 
@@ -92,8 +96,9 @@
     justify-content: space-between;
     align-items: center;
     width: 1023px;
-    padding-top: 19px;
+    padding-top: 18px;
     padding-bottom: 26px;
+    padding-right: 8px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
   }
 
@@ -139,6 +144,7 @@
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  font-weight: normal;
   text-transform: uppercase;
   color: #1b2d37;
   padding-bottom: 24px;
@@ -148,41 +154,49 @@
   }
 }
 
-.navigation__title {
+.navigation__nav_wrapper {
   @media (max-width: $mobile-width) {
-    position: relative;
-    max-width: 320px;
-    margin: 0 auto;
-    cursor: pointer;
-
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../img/Union.svg");
-      width: 16px;
-      height: 16px;
-      top: 0;
-      left: 272px;
-    }
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    min-width: 280px;
   }
 }
 
-.navigation__title_open {
+.navigation_site {
   @media (max-width: $mobile-width) {
-    position: relative;
-    max-width: 320px;
-    margin: 0 auto;
-    cursor: pointer;
+    background-image: url("../img/Union.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+  }
+}
 
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../img/Union-min.svg");
-      width: 16px;
-      height: 2px;
-      top: 0;
-      left: 272px;
-    }
+.contacts__nav_wrapper {
+  @media (max-width: $mobile-width) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-width: 280px;
+  }
+}
+
+.contacts__office {
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/Union.svg");
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+  }
+}
+
+.navigation__open {
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/Union-min.svg");
+    width: 16px;
+    height: 2px;
+    margin-right: 15px;
+    margin-top: 6px;
   }
 }
 
@@ -204,6 +218,7 @@
   display: flex;
   max-width: 516px;
   font-size: 15px;
+  font-weight: normal;
   line-height: 25px;
   opacity: 0.5;
 
@@ -225,10 +240,14 @@
 }
 
 .footer__navigation {
+  padding-right: 52px;
+
   @media (max-width: $tablet-width) {
+    padding-right: 0;
     margin-left: 0;
-    padding-top: 38px;
-    padding-left: 0;
+    padding-top: 37px;
+    padding-left: 10px;
+    margin-right: auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -236,56 +255,16 @@
     padding-top: 29px;
     width: auto;
     padding-left: 15px;
-  }
-}
-
-.contacts__title {
-  @media (max-width: $mobile-width) {
-    position: relative;
-    padding-bottom: 32px;
-    width: auto;
-    min-width: 320px;
-    margin: 0 auto;
-    cursor: pointer;
-
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../img/Union.svg");
-      width: 16px;
-      height: 16px;
-      top: 0;
-      left: 272px;
-    }
-  }
-}
-
-.contacts__title_open {
-  @media (max-width: $mobile-width) {
-    position: relative;
-    padding-bottom: 32px;
-    width: auto;
-    min-width: 320px;
-    margin: 0 auto;
-    cursor: pointer;
-
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../img/Union-min.svg");
-      width: 16px;
-      height: 2px;
-      top: 0;
-      left: 272px;
-    }
+    margin-right: 0;
   }
 }
 
 .footer__contacts {
   @media (max-width: $tablet-width) {
+    margin-right: 0;
     margin-left: auto;
     padding-top: 38px;
-    padding-right: 15px;
+    padding-right: 21px;
   }
 
   @media (max-width: $mobile-width) {
@@ -306,8 +285,13 @@
   flex-direction: column;
   font-size: 15px;
   line-height: 25px;
+  font-weight: normal;
   opacity: 0.5;
-  padding-right: 35px;
+  padding-right: 5px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 0;
+  }
 
   @media (max-width: $mobile-width) {
     margin: 0 auto;
@@ -315,6 +299,7 @@
     padding: 0;
     padding-bottom: 20px;
     padding-right: 35px;
+    padding-top: 10px;
   }
 }
 
@@ -332,17 +317,17 @@
 
 .footer__info {
   display: flex;
-  max-width: 1411px;
+  max-width: 1451px;
   margin: 0 auto;
   font-size: 13px;
   line-height: 24px;
+  font-weight: normal;
   align-items: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #1b2d37;
   opacity: 0.5;
   padding: 14px 15px;
-
 
   @media (max-width: $tablet-width) {
     padding: 21px 0;
@@ -378,7 +363,7 @@
 }
 
 .footer__info_protection {
-  margin-right: 59px;
+  margin-right: 67px;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -386,7 +371,7 @@
 }
 
 .footer__info_year {
-  margin-right: 142px;
+  margin-right: 149px;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -395,9 +380,11 @@
 
 .footer__info_studio {
   margin-left: auto;
+  padding-left: 15px;
+
 
   @media (max-width: $tablet-width) {
-    padding-right: 5px;
+    padding-right: 25px;
   }
 
   @media (max-width: $mobile-width) {

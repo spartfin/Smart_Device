@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name = "Description" content = "Smart Device, умные технологии">
+  <meta name="Description" content="Smart Device, умные технологии">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Смарт Девайс</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -30,32 +30,36 @@
       <h1 class="header__title">Печатные платы</h1>
       <p class="header__services">производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <a class="header__consultation" href="#">Получить бесплатную консультацию</a>
-      <a class="header__consultation_free" href="#">Бесплатную консультация</a>
+      <a class="header__consultation_free" href="#">Бесплатная консультация</a>
     </div>
   </header>
 
   <main>
     <section class="advantages">
       <ul class="advantages__list">
-        <li class="advantages__list_item">
+        <li class="advantages__list_item advantages__list_item-deadlines">
           <h3 class="advantages__title">Оперативные сроки</h3>
-          <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
+          <p class="advantages__description_deadlines">Усовершенствованная логистическая система позволяет нам
+            просчитывать стоимость, производить и доставлять
             заказы плат и комплектующих в самые короткие сроки</p>
         </li>
-        <li class="advantages__list_item">
+        <li class="advantages__list_item advantages__list_item-suppliers">
           <h3 class="advantages__title">Крупные поставщики</h3>
-          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+          <p class="advantages__description_suppliers">Нашими поставщиками являются такие крупные мировые компании как:
+            OSRAM, CREE, HOLGLITRONIC, REFOND.
             Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
       </ul>
       <ul class="advantages__list">
-        <li class="advantages__list_item">
-          <h3 class="advantages__title">Полная конфиденциальность</h3>
-          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+        <li class="advantages__list_item advantages__list_item-confidentiality">
+          <h3 class="advantages__title advantages__title_confidentiality">Полная конфиденциальность</h3>
+          <p class="advantages__description_confidentiality">По желанию клиента мы обеспечиваем полную
+            конфеденциальность.</p>
         </li>
-        <li class="advantages__list_item">
-          <h3 class="advantages__title">Персонализация стоимости</h3>
-          <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+        <li class="advantages__list_item advantages__list_item-coint">
+          <h3 class="advantages__title advantages__title_coint">Персонализация стоимости</h3>
+          <p class="advantages__description_coint">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+            установить ту цену, которая Вас
             устраивает.</p>
         </li>
       </ul>
@@ -73,10 +77,10 @@
           комплектующие
           Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
           МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России</p>
-        <p class="company__description">Наши поставщики -
+        <p class="company__description company__description_suppliers">Наши поставщики -
           мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и
           комплектующие
-          Service Devices применяются на предприятиях Российских Железных Дорог...</p>
+          Service Devices применяются на предприятиях Российских Железных Дорог..</p>
         <a class="company__more-details" href="#">Подробнее</a>
       </div>
     </section>
@@ -96,7 +100,7 @@
         </li>
         <li class="products__cards_item">
           <a href="#">
-            <p class="products__description">Комплектующие для светотехники</p>
+            <p class="products__description products__description_for-light">Комплектующие для светотехники</p>
           </a>
         </li>
       </ul>
@@ -181,7 +185,10 @@
         </div>
       </div>
       <div class="footer__navigation navigation">
-        <h3 class="navigation__title">Разделы сайта</h3>
+        <div class="navigation__nav_wrapper">
+          <h3 class="navigation__title">Разделы сайта</h3>
+          <div class="navigation_site"></div>
+        </div>
         <div class="navigation__wrapper footer__hidden">
           <ul class="navigation__list">
             <li><a href="#">О компании</a></li>
@@ -197,7 +204,10 @@
         </div>
       </div>
       <div class="footer__contacts contacts">
-        <h3 class="contacts__title">Наш офис</h3>
+        <div class="contacts__nav_wrapper">
+          <h3 class="contacts__title">Наш офис</h3>
+          <div class="contacts__office"></div>
+        </div>
         <div class="contacts__wrapper footer__hidden">
           <p>г. Мытищи, Олимпийский проспект, д.10</p>
           <a href="tel:+7(495)0005252">+7 (495) 589-40-50</a>
