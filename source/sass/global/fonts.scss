@@ -3,7 +3,7 @@
   src: url("../fonts/PTMono-Regular.woff2") format("woff2"),
     url("../fonts/PTMono-Regular.woff") format("woff");
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-display: swap;
 }
 
@@ -13,16 +13,6 @@
     url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
     url("../fonts/RobotoCondensed-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto Condensed";
-  src: local("Roboto Condensed"), local("Roboto-Condensed"),
-    url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
-    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
-  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
