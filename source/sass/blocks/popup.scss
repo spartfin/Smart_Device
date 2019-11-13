@@ -28,6 +28,10 @@
   background-image: url("../img/Union-popup.svg");
   right: 20px;
   top: 20px;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .popup__title {

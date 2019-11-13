@@ -29,13 +29,15 @@
       </div>
       <h1 class="header__title">Печатные платы</h1>
       <p class="header__services">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="header__consultation" href="#">Получить бесплатную консультацию</a>
-      <a class="header__consultation_free" href="#">Бесплатная консультация</a>
+      <a class="header__consultation" href="#question">Получить бесплатную консультацию</a>
+      <a class="header__consultation_free" href="#question">Бесплатная консультация</a>
+      <a class="header__scroll" href="#advantages"><img src="img/scroll-down.png" width="16" height="93"
+          alt="Скролл вниз"></a>
     </div>
   </header>
 
   <main>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
       <ul class="advantages__list">
         <li class="advantages__list_item advantages__list_item-deadlines">
           <h3 class="advantages__title">Оперативные сроки</h3>
@@ -86,27 +88,29 @@
     </section>
 
     <section class="products">
-      <h2 class="products__title">Service Device предлагает следующие товары и услуги</h2>
-      <ul class="products__cards">
-        <li class="products__cards_item">
-          <a href="#">
-            <p class="products__description">Производство печатных плат</p>
-          </a>
-        </li>
-        <li class="products__cards_item">
-          <a href="#">
-            <p class="products__description">Монтаж печатных плат</p>
-          </a>
-        </li>
-        <li class="products__cards_item">
-          <a href="#">
-            <p class="products__description products__description_for-light">Комплектующие для светотехники</p>
-          </a>
-        </li>
-      </ul>
+      <div class="products__wrapper">
+        <h2 class="products__title">Service Device предлагает следующие товары и услуги</h2>
+        <ul class="products__cards">
+          <li class="products__cards_item">
+            <a href="#">
+              <p class="products__description">Производство печатных плат</p>
+            </a>
+          </li>
+          <li class="products__cards_item">
+            <a href="#">
+              <p class="products__description">Монтаж печатных плат</p>
+            </a>
+          </li>
+          <li class="products__cards_item">
+            <a href="#">
+              <p class="products__description products__description_for-light">Комплектующие для светотехники</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="question">
+    <section id="question" class="question">
       <div class="question__wrapper">
         <img class="question__image" src="img/airplane.png" width="511" height="288" alt="Аэроплан">
         <div class="question__wrapper_form">
@@ -216,11 +220,13 @@
         </div>
       </div>
     </div>
-    <div class="footer__info">
-      <p class="footer__info_protection">Все права защищены</p>
-      <p class="footer__info_year">1999-2018 SD Service Devices</p>
-      <a class="footer__info_confid" href="#">Условия конфиденциальности</a>
-      <a class="footer__info_studio" href="#">Developed by wow studio</a>
+    <div class="footer__info_wrapper">
+      <div class="footer__info">
+        <p class="footer__info_protection">Все права защищены</p>
+        <p class="footer__info_year">1999-2018 SD Service Devices</p>
+        <a class="footer__info_confid" href="#">Условия конфиденциальности</a>
+        <a class="footer__info_studio" href="#">Developed by wow studio</a>
+      </div>
     </div>
   </footer>
 
@@ -254,6 +260,7 @@
   <script src="js/popup.js"></script>
   <script src="js/dropdown-menu.js"></script>
   <script src="js/picturefill.js"></script>
+  <script src="js/scroll.js"></script>
   <script></script>
 </body>
 

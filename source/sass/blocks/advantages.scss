@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #fafafa;
+  background-color: #FFFFFF;
   background-image: url("../img/middle-triangle.png"),
     url("../img/small-triangle.png");
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@
   border: 1px solid rgba(160, 160, 160, 0.2);
   border-left: 2px solid #00b2ff;
   margin-bottom: 30px;
-  background-color: #fafafa;
+  background-color: #FFFFFF;
   z-index: 20;
 
   @media (max-width: $tablet-width) {
@@ -188,10 +188,17 @@
 .advantages__list_item .advantages__description_confidentiality {
   @media (max-width: $tablet-width) {
     padding-top: 14px;
+    padding-right: 10px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 0;
+  }
+}
+
+.advantages__list_item .advantages__description_coint {
+  @media (max-width: $tablet-width) {
+    padding-right: 10px;
   }
 }
 

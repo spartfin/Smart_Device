@@ -1,4 +1,8 @@
 .products {
+  background-color: #1b2d37;
+}
+
+.products__wrapper {
   max-width: 1190px;
   height: 938px;
   margin: 0 auto;
@@ -18,6 +22,7 @@
   color: #ffffff;
   padding-top: 87px;
   padding-bottom: 52px;
+  padding-left: 10px;
 
   @media (max-width: $tablet-width) {
     margin-left: 0;

@@ -199,6 +199,17 @@
   }
 }
 
+.header__scroll {
+  display: flex;
+  width: 16px;
+  height: 93px;
+  margin-top: 94px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .header__title {
   position: relative;
   width: 750px;
@@ -211,21 +222,6 @@
   color: #ffffff;
   padding-top: 229px;
   z-index: 1;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 93px;
-    background-image: url("../img/scroll-down.png");
-    bottom: -380px;
-    left: 0;
-    background-repeat: no-repeat;
-
-    @media (max-width: $tablet-width) {
-      background-image: none;
-    }
-  }
 
   @media (max-width: $tablet-width) {
     width: 518px;
