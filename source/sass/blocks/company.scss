@@ -1,6 +1,8 @@
 .company {
   display: flex;
   background-color: #FFFFFF;
+  margin-top: -2px;
+  margin-bottom: 2px;
 }
 
 .company__image {
@@ -27,6 +29,7 @@
   padding-top: 75px;
   padding-bottom: 110px;
   margin-right: auto;
+  padding-right: 40px;
 
   &::before {
     position: absolute;
@@ -44,6 +47,7 @@
     padding-top: 27px;
     padding-bottom: 83px;
     margin-left: -28px;
+    padding-right: 0;
   }
 
   @media (max-width: $mobile-width) {
