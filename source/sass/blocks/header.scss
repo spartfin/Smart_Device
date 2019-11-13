@@ -222,6 +222,7 @@
   color: #ffffff;
   padding-top: 229px;
   z-index: 1;
+  white-space: nowrap;
 
   @media (max-width: $tablet-width) {
     width: 518px;
@@ -230,6 +231,7 @@
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 0.1em;
+    white-space: normal;
   }
 
   @media (max-width: $mobile-width) {
@@ -298,10 +300,11 @@
 
 .header__consultation {
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
+  align-items: center;
   width: 407px;
-  height: 55px;
+  min-height: 55px;
   margin-top: 43px;
   margin-left: 94px;
   background: #00b2ff;
@@ -312,6 +315,10 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  padding-left: 3px;
+  padding-right: 3px;
 
   &:hover {
     opacity: 0.5;
@@ -342,10 +349,11 @@
 
   @media (max-width: $mobile-width) {
     display: flex;
-    align-items: center;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     width: auto;
-    height: 55px;
+    min-height: 55px;
     margin-top: 40px;
     margin-left: 19px;
     margin-right: 17px;
@@ -358,6 +366,10 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #ffffff;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-left: 3px;
+    padding-right: 3px;
 
     &:hover {
       opacity: 0.5;
