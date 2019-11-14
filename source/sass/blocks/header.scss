@@ -178,7 +178,7 @@
 
 .header__contact_button {
   width: 180px;
-  height: 45px;
+  min-height: 45px;
   border: 1px solid #ffffff;
   border-radius: 5px;
   font-family: $textRoboto;
@@ -189,6 +189,10 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-left: 50px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  padding-left: 3px;
+  padding-right: 3px;
 
   &:hover {
     opacity: 0.5;
@@ -204,6 +208,10 @@
   width: 16px;
   height: 93px;
   margin-top: 94px;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;
